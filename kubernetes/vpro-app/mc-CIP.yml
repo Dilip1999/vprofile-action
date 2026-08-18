@@ -10,3 +10,16 @@ spec:
   selector:
     app: vpromc 
   type: ClusterIP
+
+
+  spec:
+  ports:
+  - port: 11219
+    targetPort: vpromc-port
+    protocol: UDP
+  selector:
+    app: vpromcx 
+  type: ClusterIP
+
+
+
