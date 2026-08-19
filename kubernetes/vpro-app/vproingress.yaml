@@ -16,8 +16,4 @@ spec:
           service:
             name: my-app
             port:
-              number: 5442
-
-
-
-
+              number: 443

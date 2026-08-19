@@ -19,4 +19,26 @@ spec:
         image: memcached
         ports:
         - name: vpromc-port
-          containerPort: 11219
+          containerPort: 11211
+
+
+
+
+
+spec:
+  selector:
+    matchLabels:
+      app: vpromc
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: vpromc
+    spec:
+      containers:
+      - name: vpromc
+        image: memcached
+        ports:
+        - name: vpromc-port
+          containerPort: 1433
+

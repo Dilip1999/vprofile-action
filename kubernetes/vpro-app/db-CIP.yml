@@ -10,3 +10,13 @@ spec:
   selector:
     app: vprodb
   type: ClusterIP
+
+  spec:
+  ports:
+  - port: 443
+    targetPort: vprodb-port
+    protocol: TCP
+  selector:
+    app: vprodb
+  type: ClusterIP
+
